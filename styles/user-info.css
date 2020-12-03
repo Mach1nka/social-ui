@@ -1,0 +1,119 @@
+.user_info {
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background-color: var(--white);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+
+.user_info__wrapper {
+    display: flex;
+    align-items: center;
+    padding-right: 6%;
+    border-right: 1px solid #e5e5e5;
+}
+
+.user__photo {
+    min-height: 100px;
+    min-width: 100px;
+    margin-right: 25px;
+    border-radius: 50%;
+    background-image: url("../assets/pictures/avatar.png");
+    background-repeat: no-repeat;
+}
+
+.user__name { max-width: 260px; }
+
+.user__name h3 {
+    font-size: 21px;
+    color: #3f4f5f;
+    font-family: 'OPEN SANS', sans-serif;
+    margin-bottom: 10px;
+}
+
+.user__approve {
+    color: #a6bad1;
+    font-size: 14px;
+}
+
+.user__name > span {
+    color: #667a90;
+    font-size: 14px;
+    font-family: 'Open Sans';
+}
+
+.user_data__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.user_data > h6 {
+    color: var(--dark-blue);
+    font-family: "Open Sans", serif;
+    font-size: 24px;
+}
+
+.user_data > span {
+    color: #667a90;
+    font-family: "Open Sans", serif;
+    font-size: 14px;
+}
+
+.button__wrapper button {
+    display: block;
+    width: 180px;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Open Sans", serif;
+    border: 2px solid var(--dark-blue);
+    border-radius: 5px;
+    margin-bottom: 10px;
+} 
+
+.button__wrapper button:hover { box-shadow: 0 3px 10px 0 rgba(0,0,0,0.3); } 
+
+.button_send-message {
+    color: var(--white);
+    background-color: var(--dark-blue);
+}
+
+.button_add-friend {
+    color: var(--dark-blue);
+    background-color: inherit;
+}
+
+
+
+@media (max-width: 1200px) {
+    .user_info {
+        display: block;
+        
+    }
+    .user_info__wrapper {
+        border-right: 0;
+        border-bottom: 1px solid #e5e5e5;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+
+    .user__name { max-width: unset; }
+}
+
+@media (max-width: 500px) {
+    .user_info__wrapper {
+        padding-right: 0;
+    }
+
+    .user_data > h6 { font-size: 16px; }
+    .user_data > span { font-size: 12px; }
+
+    .button__wrapper button {
+        width: 120px;
+        font-size: 14px;
+    }
+}

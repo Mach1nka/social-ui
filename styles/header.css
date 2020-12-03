@@ -55,7 +55,6 @@ header {
     width: 75px;
     height: 75px;
     border-left: 1px solid #41638a;
-    transition: 0.3s ease-in;
 }
 .icon:hover { color: var(--white); }
 .icon:focus { color: var(--white); }
@@ -73,7 +72,6 @@ header {
     align-items: center;
     font-size: 21px;
     color: var(--white);
-    transition: 0.3s ease-in;
     padding-right: 25px;
 }
 .profile h4 {
@@ -98,7 +96,6 @@ header {
     color:#b3bcc6;
     background-color: inherit;
     margin-right: 4.5%;
-    transition: 0.3s ease-in;
 }
 .nav_item:hover { color: var(--dark-blue); }
 
@@ -107,9 +104,6 @@ header {
     color: var(--dark-blue)
 }
 
-@media (max-width: 900px) {
-    #body { width: 100%; }
-}
 
 @media (max-width: 750px) {
     .header__menu { flex-direction: column; }

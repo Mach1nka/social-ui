@@ -1,5 +1,7 @@
 @import "variable.css";
 @import "header.css";
+@import "main.css";
+@import "user-info.css";
 
 * {
     margin: 0;
@@ -15,8 +17,13 @@ body {
 button {
     border: 0;
     cursor: pointer;
+    transition: .3s ease-in;
 } 
 button:active, 
 button:focus {
     outline: none;
+}
+
+@media (max-width: 900px) {
+    body { width: 100%; }
 }
