@@ -96,6 +96,7 @@ header {
     color:#b3bcc6;
     background-color: inherit;
     margin-right: 4.5%;
+    font-weight: 600;
 }
 .nav_item:hover { color: var(--dark-blue); }
 

@@ -1,0 +1,216 @@
+.chat__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 600px;
+    background-color: var(--white);
+    box-sizing: border-box;
+    border-radius: 7px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    font-family: "Open Sans", serif;
+    overflow: hidden;
+}
+
+.chat__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0px 25px;
+    background-color: var(--dark-blue);
+}
+
+.chat-user {
+    display: flex;
+    align-items: center;
+}
+
+.chat-user__avatar {
+    width: 32px;
+    height: 32px;
+    background-image: url("../assets/pictures/alexW.png");
+    background-position: left;
+    border-radius: 50%;
+}
+
+.chat-user__name {
+    color: var(--white);
+    margin-left: 10px;
+    position: relative;
+}
+
+.chat-user__name::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 8px;
+    right: -15px;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+
+.chat__option {
+    background-color: inherit;
+    color: #c1cfdf;
+    margin-left: 14px;
+}
+.chat__option:hover { color: var(--white); }
+
+.chat__area {
+    height: 465px;
+    padding: 0 24px;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #667a90;
+    overflow-y: scroll;
+}
+
+.time-send {
+    font-size: 9px;
+    color: #b1b1b1;
+}
+
+.time-spread {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+    margin: 18px 0;
+    color: #b1b1b1;
+}
+
+.chat_line-spread {
+    width: 25%;
+    height: 1px;
+    background-color: #b1b1b1;;
+}
+
+.alarm__error {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #ff6161;
+    top: -2px;
+    left: -4px;
+    text-align: center;
+    color: var(--white);
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.chat_input__wrapper {
+    display: flex;
+    align-items: center;
+    height: 49px;
+    padding: 0 14px;
+    border-top: 1px solid #b1b1b1;
+    margin-top: auto;
+}
+
+.chat_input__button button{
+    font-size: 22px;
+    color: #b5c6d9;
+    background-color: inherit;
+}
+
+.chat_input__button.clip { margin-left: auto; }
+
+.chat__input{
+    padding: 0 6% 0 3%;
+    width: 70%;
+    margin-left: 10px;
+    border: 0;
+    border-left: 2px solid #8f9dae;
+    outline: none;
+    font-family: "Open Sans" ,serif;
+}
+
+.messages {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    border-radius: 20px;
+    padding: 8px 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.yours { align-items: flex-start; }
+
+.yours .message {
+    margin-right: 25%;
+    background-color: #f2f4f6;
+    position: relative;
+}
+
+.yours .message::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: -7px;
+    height: 20px;
+    width: 20px;
+    background: #f2f4f6;
+    border-bottom-right-radius: 15px;
+}
+.yours .message::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: -10px;
+    width: 10px;
+    height: 20px;
+    background: var(--white);
+    border-bottom-right-radius: 10px;
+}
+
+.mine { align-items: flex-end; }
+
+.mine .message {
+    margin-left: 25%;
+    background: var(--light-blue);
+    position: relative;
+}
+
+.mine .message::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    right: -8px;
+    height: 20px;
+    width: 20px;
+    background: var(--light-blue);
+    border-bottom-left-radius: 15px;
+}
+
+.mine .message::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: -10px;
+    width: 10px;
+    height: 20px;
+    background: var(--white);
+    border-bottom-left-radius: 10px;
+}
+
+
+
+#style-2::-webkit-scrollbar-track { background-color: var(--white); }
+
+#style-2::-webkit-scrollbar { width: 5px; }
+
+#style-2::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #e5e5e5;
+}
