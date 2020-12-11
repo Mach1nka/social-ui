@@ -94,9 +94,14 @@
 .link-description { 
     margin-left: 16px;  
     line-height: 17px;
+    overflow: hidden;
 }
 
-.link-description p { font-size: 14px; }
+.link-description p { 
+    font-size: 14px; 
+    max-width: 180px;
+    max-height: 36px;
+}
 
 .link-description span {
     font-size: 14px;

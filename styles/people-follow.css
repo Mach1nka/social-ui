@@ -36,6 +36,15 @@
     background-repeat: no-repeat;
 }
 
+#avatar {
+    background-image: url("../assets/pictures/avatar.png");
+    background-position: center;
+    background-size: cover;
+}
+#morison {background-image: url("../assets/pictures/morison.png");}
+#dorn {background-image: url("../assets/pictures/dorn.png");}
+#JDilan {background-image: url("../assets/pictures/Jdilan.png");}
+#NDilan {background-image: url("../assets/pictures/Ndilan.png");}
 #vane { background-image: url("../assets/pictures/david.png"); }
 #ertan { background-image: url("../assets/pictures/kevin.png"); }
 #doe { background-image: url("../assets/pictures/jane.png"); }
@@ -53,10 +62,14 @@
     right: 1px;
 }
 
-.friend__data { flex-grow: 1; }
+.friend__data { 
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
 
 .friend__name {
-    font-size: 16px;
+    display: inline-block;
     color: #3f4f5f;
     font-weight: 600;
     overflow: hidden;
@@ -68,6 +81,7 @@
 .friend-devaice {
     color: #b8c1ca;
     font-size: 12px;
+    margin-right: 4px;
 }
 
 .friend__status {

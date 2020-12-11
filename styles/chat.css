@@ -58,7 +58,7 @@
 .chat__option:hover { color: var(--white); }
 
 .chat__area {
-    height: 465px;
+    height: 475px;
     padding: 0 24px;
     margin-top: 25px;
     font-size: 14px;
@@ -106,7 +106,6 @@
     height: 49px;
     padding: 0 14px;
     border-top: 1px solid #b1b1b1;
-    margin-top: auto;
 }
 
 .chat_input__button button{
@@ -128,7 +127,7 @@
 }
 
 .messages {
-    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
 }

@@ -1,0 +1,241 @@
+.dialogues {
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
+    height: 810px;
+    overflow: hidden;
+    background-color: var(--white);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    font-family: "Open Sans", serif;
+}
+
+.dialogues__friends-list__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 29%;
+    min-width: 300px;
+    border-right: 1px solid #e5e5e5;
+}
+
+.dialogues__friends-list__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13%;
+    padding: 0 25px;
+}
+
+.dialogues__number-new-messages {
+    color: var(--dark-blue);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.dialogues__friends-list__option {
+    font-size: 16px;
+    color: #a6bad1;
+    background-color: inherit;
+    margin-left: 10px;
+}
+
+.dialogues__friends__list {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.dialogues__friends__list::-webkit-scrollbar { width: 0; }
+
+.dialogues__friends__list__item {
+    display: flex;
+    align-items: center;
+    height: 13%;
+    padding: 0 25px;
+    border-bottom: 1px solid #ededed;
+    cursor: pointer;
+}
+
+.dialogues__friend__data { width: 100%; }
+
+.dialogues__friend__data > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time__last-message {
+    font-size: 14px;
+    color: #b1b1b1;
+}
+
+.friend__last-message {
+    display: inline-block;
+    max-width: 170px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 14px;
+    color: #667a90;
+}
+
+.number-new-messages {
+    width: 24px;
+    height: 24px;
+    border-radius: 1px;
+    background-color: var(--dark-blue);
+    text-align: center;
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.dialogues__friends__list__item.unread { background-color: var(--light-blue); }
+
+.dialogues__chat__wrapper {
+    width: 100%;
+}
+
+.dialogues__chat__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 93px;
+    padding: 0 25px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.dialogues__chat__header > div{ display: flex; }
+
+.dialogues__chat_options button {
+    margin-left: 15px;
+}
+
+.dialogues__chat {
+    height: 74%;
+    padding: 0 25px;
+    overflow-y: scroll;
+    font-size: 14px;
+    color: #667a90;
+}
+
+.dialogues__chat .mine .message {
+    margin-left: 50%;
+}
+
+.dialogues__chat .mine  {
+    justify-content: flex-end;
+}
+
+.dialogues__chat .yours {
+    justify-content: flex-start;
+}
+
+
+.dialogues__chat .yours .message {
+    margin-right: 0;
+}
+
+.dialogues__chat .messages {
+    flex-direction: unset;
+}
+
+.dialogues__chat .time-send { font-size: 12px; }
+
+.message img {
+    width: 149px;
+    height: 124px;
+    border-radius: 2px;
+}
+
+#dialogues__chat::-webkit-scrollbar-track { background-color: var(--white); }
+
+#dialogues__chat::-webkit-scrollbar { width: 5px; }
+
+#dialogues__chat::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #e5e5e5;
+}
+
+.message__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.dialogues__chat .mine .friend__photo {
+    margin-left: 25px;
+    margin-right: 0;
+}
+
+.dialogues__chat .yours .message__wrapper {
+    align-items: flex-start;
+}
+
+.dialogues__chat .yours,
+.dialogues__chat .mine{
+    align-items: flex-end;
+}
+
+.dialogues__chat__input {
+    padding: 20px 18px;
+    background-color: var(--light-blue);
+    border-top: 1px solid #e5e5e5;
+}
+
+.dialogues__form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dialogues__form input {
+    box-sizing: border-box;
+    padding: 10px 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+    width: 80%;
+    height: 45px;
+    outline: none;
+}
+
+.dialogues__form button {
+    display: block;
+    width: 120px;
+    padding: 9px 0;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid var(--dark-blue);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.dialogues__chat__input__options {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.dialogues__chat__input__options button{
+    font-size: 16px;
+    color: #2b587a;
+    background-color: inherit;
+}
+
+@media (max-width: 1100px) {
+    .dialogues__chat .mine .message {
+        margin-left: 10%;
+    }
+    .dialogues__chat__input__options {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .dialogues {
+        display: none;
+    }
+}
+
+
+
+
